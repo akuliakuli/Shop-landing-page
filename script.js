@@ -19,8 +19,8 @@ function addActive(i = 0){
 addActive(0);
 
 sliderParent.addEventListener("click",(e) =>{
-    const target = e.target;
-    if(target && target.matches(".slider_element > *")){
+    const target = e.target.closest(".slider_element_item");
+    if(target && target.matches(".slider_element_item")){
         sliderItems.forEach((item,i) =>{
             if(target == item){
                 removeActive();
