@@ -816,6 +816,19 @@ color: #FFFFFF;
        justify-content: center; 
        align-items: center;
     }
+    .header_main_img_phone{
+        margin-top: 2em;
+        max-width: 285px;
+        max-height: 442.78px;
+    }
+    .header_top_bar{
+        align-items: center;
+        justify-content: center;
+    }
+    .header_top_bar_button{
+        align-items: center;
+        justify-content: center;
+    }
     .header_main_container{
         flex-direction: column;
         justify-content: center;
@@ -836,7 +849,75 @@ color: #FFFFFF;
     .footer_info{
         justify-content: center;
     }
+    .main_customer_num{
+        font-size: 80px;
+    }
+    .footer_input_text{
+        max-width: 320px;
+        align-items: center;
+    }
+    .main_mobile_container{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .main_mobile_descr{
+        flex-direction: column;
+        max-width: 320px;
+    }
+    .main_mobile_banks{
+        flex-direction: column;
+    }
+    .main_mobile_logo{
+        max-width:86.1px;
+        max-height: 22px;
+    }
+    .header_descr_title{
+        max-width: 320px;
+        font-size: 1.5em;
+        align-items: center;
+    }
+    .header_descr_text{
+        max-width: 320px;
+        font-size: .8em;
+    }
+    .main_customers_container{
+        flex-direction: column;
+    }
+    .main_customer{
+        flex-direction: column;
+    }
+    .main_customer_img{
+        width: 160.4px;
+    height: 96.6px;
+    }
+    .main_mobile{
+        align-self: center;
+        align-items: center;
+        max-width: 296.55px;
+        max-height: 336px;
+        margin-right: 4em;
+    }
     /* .footer_pointer{
         flex-direction: column;
     } */
+}
+@media(max-width:420px){
+    .header_top_bar{
+        flex-direction: column;
+    }
+    .header_descr_text{
+        margin-top: 3em;
+        font-size: 1em;
+    }
+    .header_main_container{
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+    .top_bar_menu{
+        display: none;
+    }
+    .header_top_bar_button{
+        display: none;
+    }
 }
