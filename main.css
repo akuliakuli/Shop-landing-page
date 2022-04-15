@@ -668,6 +668,7 @@ color: #FFFFFF;
     gap: .2em;
     background: #FFFFFF;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 .footer_input input{
     align-self: center;
@@ -939,6 +940,11 @@ color: #FFFFFF;
     /* .footer_pointer{
         flex-direction: column;
     } */
+}
+@media(max-width:600px){
+    .header_top_bar_button{
+        display: none;
+    }
 }
 @media(max-width:420px){
     .header_top_bar{
