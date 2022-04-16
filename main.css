@@ -845,6 +845,10 @@ color: #FFFFFF;
     body{
         max-width: 834px;
     }
+    .header_top_bar{
+        flex-direction: column;
+        align-items: center;
+    }
     .footer_input_text{
         flex-direction: column;
 
