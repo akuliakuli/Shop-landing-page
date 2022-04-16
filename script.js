@@ -31,7 +31,7 @@ sliderParent.addEventListener("click",(e) =>{
 })
 // ARROW SLIDER
 
-let slides = document.querySelectorAll(".main_customer"),
+let slides = document.querySelectorAll(".main_customer_num"),
     prev = document.querySelector(".left"),
     next = document.querySelector(".right");
 
@@ -47,13 +47,13 @@ let slides = document.querySelectorAll(".main_customer"),
             slideIndex = slides.length;
         }
 
-        slides.forEach((item) => item.classList.remove = 'num');
+        slides.forEach(item => item.classList.remove("num"));
 
-        slides[slideIndex - 1].classList.add("num");
+        slides[slideIndex - 1].classList.add("num")
         
       
     }
-
+  
     function plusSlides (n) {
         showSlides(slideIndex += n);
     }

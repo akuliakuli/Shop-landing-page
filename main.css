@@ -298,7 +298,9 @@ background: radial-gradient(199.83% 125.68% at 50% -33.36%, rgba(23, 23, 24, 0) 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.2em;
+    align-items: center;
+    max-width: 1000px;
+    gap: 3em;
 }
 .modal_header{
     font-family: 'Montserrat';
@@ -778,6 +780,7 @@ footer{
     width: 158.08px;
     height: 84px;
 }
+
 .footer_title{
     font-family: 'Montserrat';
     font-style: normal;
@@ -806,6 +809,13 @@ color: #FFFFFF;
 .footer_map h1{
     max-width: 88.05px;
 }
+.footer_text:hover{
+    font-size: 17px;
+}
+.footer_map_img:hover{
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+}
 .footer_pointer{
     display: flex;
     align-items: center;
@@ -829,6 +839,21 @@ color: #FFFFFF;
     body{
         max-width: 834px;
     }
+    .footer_input_text{
+        flex-direction: column;
+
+    }
+    .slider_feedback{
+        align-items: stretch;
+    }
+    .feedback_send_item{
+        max-width:120px;
+    }
+    .feedback_text{
+        flex-grow: 1;
+        font-size: 1em;
+        max-width: 120px;
+    }
     .header_main_fade{
         display: none;
     }
@@ -850,6 +875,13 @@ color: #FFFFFF;
         align-items: center;
         justify-content: center;
     }
+    .main_customer_num{
+        font-size: 90px;
+        margin: 0;
+    }
+    .box_text_small{
+        margin-left: 2em;
+    }
     .header_main_container{
         flex-direction: column;
         justify-content: center;
@@ -866,6 +898,10 @@ color: #FFFFFF;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .main_customers_list{
+        gap: 1em;
+        flex-direction: column;
     }
     .footer_info{
         justify-content: center;
@@ -905,9 +941,7 @@ color: #FFFFFF;
     .main_customers_container{
         flex-direction: column;
     }
-    .main_customer{
-        flex-direction: column;
-    }
+    
     .main_customer_img{
         width: 160.4px;
     height: 96.6px;
@@ -920,12 +954,20 @@ color: #FFFFFF;
         max-width: 180px;
         font-size: .9em;
     }
-    .footer_input_box{
+    
+    .footer_input{
+        margin-bottom: 5em;
+    }
+    .footer_input_container{
         max-width: 320px;
-        font-size: .9em;
+
         justify-content: center;
         align-items: center;
-        flex-direction: row;
+    }
+    .footer_input_text{
+        max-width: 320px;
+        display: flex;
+        justify-content: center;
     }
     .box_text{
         max-width: 320px;
@@ -944,6 +986,10 @@ color: #FFFFFF;
 @media(max-width:600px){
     .header_top_bar_button{
         display: none;
+    }
+    .main_customer{
+        flex-direction: row;
+        max-width: 200px;
     }
 }
 @media(max-width:420px){
