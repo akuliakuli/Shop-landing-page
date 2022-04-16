@@ -834,6 +834,9 @@ color: #FFFFFF;
     .header_main_fade{
         display: none;
     }
+    .main_mobile_descr{
+        max-width: 300px;
+    }
 }
 @media(max-width:834px){
     html{
@@ -1011,6 +1014,9 @@ color: #FFFFFF;
         flex-wrap: wrap;
         gap: 3em;
     }
+   .main_customer{
+       flex-direction: column;
+   }
     .top_bar_menu{
         display: none;
     }

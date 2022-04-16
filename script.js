@@ -48,7 +48,6 @@ let slides = document.querySelectorAll(".main_customer_num"),
         }
 
         slides.forEach(item => item.classList.remove("num"));
-
         slides[slideIndex - 1].classList.add("num")
         
       
