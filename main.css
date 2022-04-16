@@ -1002,6 +1002,9 @@ color: #FFFFFF;
     .header_top_bar{
         flex-direction: column;
     }
+    .header_img_text{
+        display: none;
+    }
     .main_customers_list{
         max-width: 400px;
         flex-direction: column;
@@ -1022,5 +1025,30 @@ color: #FFFFFF;
     }
     .header_top_bar_button{
         display: none;
+    }
+}
+@media(max-width:200px){
+    .header_main_sign{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .header_main_container{
+        max-width: 200px;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+    .header_main_hidden{
+        display: none;
+    }
+    .header_main_button_img{
+        max-width:32px;
+        max-height: 35px;
+        padding: .5em;
+    }
+    .header_main_img_phone{
+        align-self: flex-start;
+        max-width: 115px;
+        max-height: 122.78px;
     }
 }
